@@ -1,0 +1,10 @@
+<?php
+// 1. Variable
+$name = 'Rondinelli';
+$age = 21;
+$gender = 'Male';
+$hobby = 'Programming';
+
+echo "Hello, My names is $name, I'm $age years old <br>";
+echo "Gender: $gender <br>";
+echo 'My hobby is ' . $hobby . '<br>';
