@@ -1,0 +1,3 @@
+// 4. Array
+define('FRUITS', ['Apple', 'Banana', 'Avacado', 'Grapes']);
+print_r(FRUITS);
