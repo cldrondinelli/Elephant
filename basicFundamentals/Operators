@@ -1,0 +1,9 @@
+// 5. Operator
+$num1 = 1;
+$num2 = 11;
+
+echo $num1 + $num2 . '<br>';
+echo $num1 * $num2 . '<br>';
+echo $num1 / $num2 . '<br>';
+echo $num1 % $num2 . '<br>';
+echo $num1 ** $num2 . '<br>';
