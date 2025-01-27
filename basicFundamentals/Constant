@@ -1,0 +1,4 @@
+// 3. Constant
+define('MESSAGE', 'Thank you for following me on TikTok Rondinelli Tech | Life');
+echo '<br>';
+echo MESSAGE;
