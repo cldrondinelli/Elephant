@@ -1,0 +1,7 @@
+// 3. Arrays
+$cars = ['Raptor', 'Honda', 'BMW', 'Mercedes'];
+$shoeBrand = array('Nike', 'Adidas', 'Puma', 'ANTA');
+
+echo $cars[0];
+echo '<br>';
+print_r($shoeBrand);
