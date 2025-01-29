@@ -1,0 +1,7 @@
+//Function
+function showMessage($message)
+{
+    return $message;
+}
+
+echo showMessage('You can do it!');
