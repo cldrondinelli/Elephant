@@ -1,0 +1,29 @@
+A "while" loop repeats a block of code as long as a condition remains true, 
+while A "do-while" loop guarantees that the code block will execute at least once before checking the condition, 
+and A "for" loop is used when you know exactly how many times you want to repeat a block of code, often iterating through a sequence of values like a list or range
+foreach - loop through a block of code for each element in an array
+
+// while //
+$counter = 1;
+while ($counter <= 5) {
+    echo 'Counter:' . $counter . '<br>';
+    $counter++;
+}
+
+// do while //
+do {
+    echo 'Counter: ' . $counter . '<br>';
+    $counter++;
+} while ($counter <= 5);
+
+// for loop //
+for ($r = 1; $r <= 5; $r++) {
+    echo 'Counter: ' . $r . '<br>';
+}
+
+// foreach //
+$arr = ['Apple', 'Banana', 'Avacado', 'Grapes'];
+
+foreach ($arr as $index => $fruit) {
+    echo 'Fruit:' . $index . ': ' . $fruit . '<br>';
+}
