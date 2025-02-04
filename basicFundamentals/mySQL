@@ -1,0 +1,35 @@
+// HTML
+<body>
+    <form action="/php-basic/index.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="age" placeholder="Enter your age">
+        <input type="submit" value="CLICK">
+    </form>
+</body>
+
+// php mySQL
+if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+    $age = $_POST['age'];
+
+    echo "Name: $name <br>";
+    echo "Age: $age <br>";
+}
+
+// mySQL Query
+<php?
+$host = 'localhost';
+$name = 'root';
+$password = '';
+$database = 'php-basic';
+
+$connection = mysqli_connect($host, $name, $password, $database);
+
+$queryUser = "SELECT * FROM user";
+$sqlUser = mysqli_query($connection, $queryUser);
+
+while ($results = mysqli_fetch_array($sqlUser)) {
+    echo "[Databases]Name:" .  $results['name'] . "<br>";
+    echo "[Databases]Age:" .  $results['age'] . "<br>";
+}
+?>
