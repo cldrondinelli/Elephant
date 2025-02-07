@@ -1,0 +1,17 @@
+//HTML
+
+<form action="/php-basic/index.php" method="post">
+        <input type="text" name="firstName" placeholder="Enter your FirstName">
+        <input type="text" name="lastName" placeholder="Enter your LastName">
+        <input type="submit" value="Submit">
+</form>
+
+//PHP
+
+if (isset($_POST['firstName'])) {
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+
+    echo "First Name: $firstName <br>";
+    echo "Last Name: $lastName <br>";
+}
