@@ -1,0 +1,9 @@
+$hour = 40;
+$rate = 15;
+$weekly_plan = null;
+
+if($hour <= 40){
+$weekly_pay = $hours * $rate;
+}
+
+echo "You made \${$weekly_pay} this week";
