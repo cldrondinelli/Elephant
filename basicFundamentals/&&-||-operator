@@ -1,0 +1,18 @@
+//&&
+$temp = 19;
+
+if ($temp >= 20 && $temp <= 30) {
+    echo 'The weather is good';
+} else {
+    echo 'The weather is bad <br>';
+}
+
+//||
+$age = 17;
+$citizen = false;
+
+if ($age >= 18 || $citizen) {
+    echo 'You can vote <br>';
+} else {
+    echo 'You cannot vote <br>';
+}
