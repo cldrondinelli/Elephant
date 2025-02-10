@@ -2,6 +2,12 @@
 
 $fruits = array("Avocado", "Banana", "Grapes", "Mango");
 
+//Change Value
+$fruits[0] = "pineapple";
+
+//Add Value
+array_push($fruits, "then the value you want to add")
+
 foreach ($fruits as $fruits) {
   echo $fruits . '<br>'
 }
