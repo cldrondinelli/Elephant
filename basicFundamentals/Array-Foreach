@@ -8,6 +8,16 @@ $fruits[0] = "pineapple";
 //Add Value
 array_push($fruits, "then the value you want to add")
 
+//Remove Last Value
+array_pop($fruits); then the last value will remove
+
+//Remove First Value
+array_shift($fruits); then the first value will remove
+
+//Array Reverse
+array_reverse($fruits);
+
+
 foreach ($fruits as $fruits) {
   echo $fruits . '<br>'
 }
