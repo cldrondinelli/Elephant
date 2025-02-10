@@ -1,0 +1,7 @@
+//Array - Foreach
+
+$fruits = array("Avocado", "Banana", "Grapes", "Mango");
+
+foreach ($fruits as $fruits) {
+  echo $fruits . '<br>'
+}
