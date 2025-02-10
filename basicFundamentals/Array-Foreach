@@ -15,8 +15,9 @@ array_pop($fruits); then the last value will remove
 array_shift($fruits); then the first value will remove
 
 //Array Reverse
-array_reverse($fruits);
-
+$reverse_fruits = array_reverse($fruits);
+foreach ($reverse_fruit as $fruits) {
+    echo $fruits . '<br>';
 
 foreach ($fruits as $fruits) {
   echo $fruits . '<br>'
