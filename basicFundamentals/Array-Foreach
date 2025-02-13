@@ -1,4 +1,4 @@
-//Array - Foreach
+Array - Foreach
 
 $fruits = array("Avocado", "Banana", "Grapes", "Mango");
 
