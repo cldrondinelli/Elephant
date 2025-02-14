@@ -1,0 +1,33 @@
+<?php
+$credit_card = null;
+
+if (isset($_POST['credit_card'])) {
+    $credit_card = $_POST['credit_card'];
+}
+
+switch ($credit_card) {
+    case "Visa":
+        echo "You selected Visa";
+        break;
+    case "Mastercard":
+        echo "You selected Mastercard";
+    case "American Express";
+        echo "You selected American Express";
+        break;
+    default:
+        echo "Please make a selection";
+}
+?>
+
+
+
+//HTML
+<form action="/php-basic/basic.php" method="post">
+        <input type="radio" name="credit_card" value="Visa">
+        Visa <br>
+        <input type="radio" name="credit_card" value="Mastercard">
+        Mastercard <br>
+        <input type="radio" name="credit_card" value="American Express">
+        American Express <br>
+        <input type="submit" name="confirm" value="Confirm">
+</form>
