@@ -1,0 +1,42 @@
+//PHP
+<?php
+if (isset($_POST['submit'])) {
+
+    if (isset($_POST['avocado'])) {
+        echo "You like Avocado <br>";
+    }
+    if (isset($_POST['banana'])) {
+        echo "You like Banana <br>";
+    }
+    if (isset($_POST['Mango'])) {
+        echo "You like Mango <br>";
+    }
+    if (isset($_POST['grapes'])) {
+        echo "You like Grapes <br>";
+    }
+    if (isset($_POST['mango'])) {
+        echo "You like Mango <br>";
+    }
+    if (isset($_POST['apple'])) {
+        echo "You like Apple <br>";
+    } else {
+        echo "Please make a selection <br>";
+    }
+}
+?>
+
+
+//HTML
+<form action="/php-basic/basic.php" method="post">
+        <input type="checkbox" name="avocado" value="Avocado">
+        Avocado <br>
+        <input type="checkbox" name="banana" value="Banana">
+        Banana <br>
+        <input type="checkbox" name="grapes" value="Grapes">
+        Grapes <br>
+        <input type="checkbox" name="mango" value="Mango">
+        Mango <br>
+        <input type="checkbox" name="apple" value="Apple">
+        Apple <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
