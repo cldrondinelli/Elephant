@@ -1,0 +1,21 @@
+<?php
+if (isset($_POST['login'])) {
+    $username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_SPECIAL_CHARS);
+    $email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+
+    if (empty($username)) {
+        echo "Username is missing";
+    } elseif (empty($email)) {
+        echo "Email is missing";
+    } else {
+        echo "Hello, {$username}! Your email is {$email}";
+    }
+}
+?>
+
+//HTML
+<form action="/php-basic/basic.php" method="post">
+        <input type="text" name="username" placeholder="Enter you username"><br>
+        <input type="email" name="email" placeholder="Enter your email"><br>
+        <input type="submit" name="login" id="login_btn">
+    </form>
