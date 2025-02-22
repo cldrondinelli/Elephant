@@ -1,0 +1,28 @@
+<?php
+include("database.php");
+
+$sql = "SELECT * FROM users";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        echo "ID: " . $row["id"] . "<br>";
+        echo "User: " . $row["user"] . "<br>";
+        echo "REG_DATE: " . $row["reg_date"] . "<br>";
+    };
+} else {
+    echo "No user found!";
+}
+
+mysqli_close($conn);
+
+//OUTPUT
+ID: 2
+User: Squidward
+REG_DATE: 2025-02-21 23:22:09
+ID: 3
+User: Patrick
+REG_DATE: 2025-02-21 23:26:07
+ID: 4
+User: Sandy
+REG_DATE: 2025-02-21 23:28:29
